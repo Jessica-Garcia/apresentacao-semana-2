@@ -8,6 +8,5 @@ public class TesteCliente {
         System.out.println("Valores padrão dos tipos primitivo e wrapper");
         System.out.println("Idade tipo Primitivo: " + cliente.getIdadePrimitivo());
         System.out.println("Idade tipo Wrapper: " + cliente.getIdadeWrapper());
-
     }
 }

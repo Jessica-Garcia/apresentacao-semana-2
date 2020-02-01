@@ -1,6 +1,8 @@
 package br.com.jessica.tipos.teste;
 
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class TiposExemplo {
     public static void main(String[] args) {
@@ -17,10 +19,9 @@ public class TiposExemplo {
         char a = 'a';
 
         //Wrapper Classes que representam tipos primitivos
-        // boxing (tranformação do tipo primitivo para tipo classe wrapper) é natural
         Short num7 = 1;
         Byte num8 = 10;
-        Integer num9 = 100; // = Integer num9 = new Integer(100);
+        Integer num9 = 100; //  Integer num9 = new Integer(100);
         Long num10 = 10000l;
 
         Float num11 = 3.5f;
@@ -29,12 +30,17 @@ public class TiposExemplo {
         Boolean flag2 = true;
         Character b = 'b';
 
-        // unboxing natural (tranforma tipo classe em tipo primitivo)
+        // tranformação do tipo primitivo para tipo wrapper class é natural(autoboxing)
 
-        Integer wrapper = 100;
+        int pri = 200;
+        Integer wra = pri;
+        System.out.println("primitivo para wrapper: " + wra);
+
+        // tranformação do tipo classe em tipo primitivo é natural (auto-unboxing)
+
+        Integer wrapper = 300; // mas não pode ser null
         int primitivo = wrapper; // int primitivo = wrapper.intValue();
-        System.out.println(primitivo);
-
+        System.out.println("wrapper para primitivo: " + primitivo);
 
         // comparações com "==" em wrappers podem dar problema:
 
@@ -50,17 +56,29 @@ public class TiposExemplo {
             System.out.println("x = y: " + false);
         }
 
-        // melhor comparar wrappers com método .equals
+        // melhor comparar wrappers com métodos, como .equals, por exemplo
 
         System.out.println("Comparação wrappers com .equals");
 
         if (x.equals(y)){
-            System.out.println("x é igual a y: " + true);
+            System.out.println("x = y: " + true);
         }
         else{
-            System.out.println("x é igual a y: " + false);
+            System.out.println("x = y: " + false);
         }
 
+        List<Integer> numeros = new ArrayList<>();
+        numeros.add(x);
+        numeros.add(num9);
+        numeros.add(pri);
+        numeros.add(primitivo);
+        numeros.add(wrapper);
+        numeros.add(num3);
+        numeros.add(y);
+        System.out.println("Lista de Integers:");
+        for (Integer numero : numeros){
+            System.out.print(numero + ", ");
+        }
     }
 
 }
