@@ -1,6 +1,6 @@
 package br.com.jessica.exceptions.personalizadas;
 
-public class UsandoMinhaException {
+public class DivisaoNaoExataTeste {
     public static void main(String[] args) {
         int[] numeros = {4, 8, 5, 16, 32, 21, 64, 128};
         int[] denom = {2, 0, 4, 8, 0, 2, 4};
