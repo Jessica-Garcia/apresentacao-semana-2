@@ -14,4 +14,9 @@ public class DivisaoNaoExataException extends Exception{
     public String toString() {
         return "Resultado de " + num + "/" + denom + " não é um inteiro";
     }
+
+    @Override
+    public String getMessage() {
+        return this.toString();
+    }
 }

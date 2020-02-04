@@ -22,5 +22,6 @@ public class FinallyTeste {
                 System.out.println("finally executa sempre após o try ou catch");
             }
         }
+        System.out.println("Fim do programa");
     }
 }

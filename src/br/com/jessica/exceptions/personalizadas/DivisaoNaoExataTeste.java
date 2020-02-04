@@ -16,7 +16,7 @@ public class DivisaoNaoExataTeste {
                 System.out.println("Aconteceu um erro: " + e.getMessage());
             }
             catch (DivisaoNaoExataException e){
-                System.out.println("Aconteceu um erro: " + e.toString());
+                System.out.println("Aconteceu um erro: " + e.getMessage());
             }
         }
     }
