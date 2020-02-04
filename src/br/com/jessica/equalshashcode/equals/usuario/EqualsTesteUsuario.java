@@ -1,6 +1,6 @@
-package br.com.jessica.equalshashcode.equals;
+package br.com.jessica.equalshashcode.equals.usuario;
 
-public class EqualsTeste {
+public class EqualsTesteUsuario {
     public static void main(String[] args) {
         Usuario u1 = new Usuario();
         u1.nome = "Pedro Silva";

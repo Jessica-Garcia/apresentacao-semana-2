@@ -1,4 +1,4 @@
-package br.com.jessica.collections.list;
+package br.com.jessica.collections.list.listadeusuario;
 
 import java.util.ArrayList;
 
@@ -24,7 +24,6 @@ public class Lista {
 
         //verificar se o elemento está contido, retorna true ou false
         System.out.println("contém? " + lista.contains(new Usuario("Lia")));
-
 
         for(Usuario u : lista){
             System.out.println(u);

@@ -1,4 +1,4 @@
-package br.com.jessica.equalshashcode.equals;
+package br.com.jessica.equalshashcode.equals.usuario;
 
 public class Usuario {
    public String nome;

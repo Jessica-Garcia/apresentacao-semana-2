@@ -1,4 +1,4 @@
-package br.com.jessica.collections.list;
+package br.com.jessica.collections.list.listadeusuario;
 
 import java.util.Objects;
 

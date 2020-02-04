@@ -10,17 +10,20 @@ public class ConjuntoHomogeneo {
         //para deixar os elementos ordenado por ordem de inserção instanciar com:
         //SortedSet<String> lista = new TreeSet<>();
         //TreeSet<String> lista = new TreeSet<>();
+        //Set<String> lista = new LinkedHashSet<>();
         lista.add("Ana");
         lista.add("Carlos");
         lista.add("Luca");
         lista.add("Pedro");
 
         System.out.println(lista);
+        System.out.println("--------------------------------");
 
         for(String nome : lista){
             System.out.println(nome);
         }
 
+        System.out.println("--------------------------------");
         Set<Integer> nums = new HashSet<>();
         nums.add(1);
         nums.add(2);
@@ -29,6 +32,7 @@ public class ConjuntoHomogeneo {
         nums.add(5);
 
         System.out.println(nums);
+        System.out.println("--------------------------------");
 
         for(Integer n : nums){
             System.out.println(n);

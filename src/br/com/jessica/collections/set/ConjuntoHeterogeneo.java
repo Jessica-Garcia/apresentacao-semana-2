@@ -35,11 +35,12 @@ public class ConjuntoHeterogeneo {
         nums.add(1);
         nums.add(2);
         nums.add(3);
+
         // mostrando os valores:
         System.out.println(nums);
         System.out.println(conjunto);
 
-        //para fazer a união entre os conjuntos, não mantém uma ordem
+        //para fazer a união entre os conjuntos, (não mantém uma ordem)
         conjunto.addAll(nums);
         System.out.println(conjunto);
 
