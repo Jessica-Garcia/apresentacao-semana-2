@@ -2,7 +2,6 @@ package br.com.jessica.collections.set;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.function.DoubleToIntFunction;
 
 public class ConjuntoHomogeneo {
     public static void main(String[] args) {
