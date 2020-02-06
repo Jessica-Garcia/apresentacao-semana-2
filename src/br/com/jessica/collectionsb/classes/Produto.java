@@ -33,7 +33,7 @@ public class Produto implements Comparable<Produto>{
     public int hashCode() {
         return Objects.hash(id);
     }
-    // método para ordenar a List por id
+    // método para ordenar por id
     @Override
     public int compareTo(Produto outroProduto) {
         return this.id.compareTo(outroProduto.getId());
