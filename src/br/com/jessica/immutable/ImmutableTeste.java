@@ -11,5 +11,27 @@ public class ImmutableTeste {
         System.out.println(immut.getAtributoImutavel1());
         System.out.println(immut.getAtributoImutavel2());
         System.out.println(immut.getAtributoMutavel1());
+
+        //pode-se fazer cópia apenas da referência do objeto imutável
+        String string1 = "abcd";
+        String string2 = string1;
+
+        System.out.println(string1);
+        System.out.println(string2);
+        System.out.println("--------------------------------------------");
+        //só muda se criar um novo objeto
+        string1 = "1234";
+       // string2 = string1;
+
+
+        System.out.println(string1);
+        System.out.println(string2);
+        System.out.println("--------------------------------------------");
+
+        ImmutableClass immut2 = immut;
+
+        System.out.println(immut2.getAtributoImutavel2());
+        System.out.println(immut.getAtributoImutavel2());
+
     }
 }
