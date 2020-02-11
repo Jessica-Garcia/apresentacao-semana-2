@@ -23,7 +23,7 @@ public class QueueTeste {
         //System.out.println(queue.remove());
 
         // remove objeto específico retorna true ou false
-       // System.out.println(queue.remove("B"));
+       //System.out.println(queue.remove("B"));
 
         System.out.println(queue.size());
 

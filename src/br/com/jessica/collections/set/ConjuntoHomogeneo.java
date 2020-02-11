@@ -7,31 +7,31 @@ import java.util.TreeSet;
 
 public class ConjuntoHomogeneo {
     public static void main(String[] args) {
-        Set<String> lista = new HashSet<>();
+        Set<String> conjunto = new HashSet<>();
         //para deixar os elementos ordenado por ordem alfabética:
-        //Set<String> lista = new TreeSet<>();
-        //TreeSet<String> lista = new TreeSet<>();
+        //Set<String> conjunto = new TreeSet<>();
+        //TreeSet<String> conjunto = new TreeSet<>();
         //para deixar os elementos ordenado por ordem de inserção:
-        //Set<String> lista = new LinkedHashSet<>();
-        lista.add("Carlos");
-        lista.add("Ana");
-        lista.add("Pedro");
-        lista.add("Luca");
+        //Set<String> conjunto = new LinkedHashSet<>();
+        conjunto.add("Carlos");
+        conjunto.add("Ana");
+        conjunto.add("Pedro");
+        conjunto.add("Luca");
 
-        System.out.println(lista);
+        System.out.println(conjunto);
         System.out.println("--------------------------------");
 
-        for(String nome : lista){
+        for(String nome : conjunto){
             System.out.println(nome);
         }
 
         System.out.println("--------------------------------");
         Set<Integer> nums = new HashSet<>();
         nums.add(1);
-        nums.add(2);
         nums.add(3);
-        nums.add(4);
+        nums.add(2);
         nums.add(5);
+        nums.add(4);
 
         System.out.println(nums);
         System.out.println("--------------------------------");

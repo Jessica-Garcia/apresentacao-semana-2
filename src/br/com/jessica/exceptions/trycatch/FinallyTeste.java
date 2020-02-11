@@ -12,7 +12,7 @@ public class FinallyTeste {
             }
             catch(ArithmeticException e){
                 System.out.println("Erro ao dividir por zero");
-                //System.exit(0); // termina execução, não deixa fynally executar
+                System.exit(0); // termina execução, não deixa fynally executar
             }
             catch(ArrayIndexOutOfBoundsException e){
                 System.out.println("Erro: posição inválida");

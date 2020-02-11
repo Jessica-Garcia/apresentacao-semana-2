@@ -7,8 +7,8 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 public class Fila {
     public static void main(String[] args) {
-        Queue<String> fila = new LinkedList<>();
-       // Queue<String> fila = new PriorityQueue<>(); // ordena a queue por algum critério definido por comparable ou comparator
+        //Queue<String> fila = new LinkedList<>();
+        Queue<String> fila = new PriorityQueue<>(); // ordena a queue por algum critério definido por comparable ou comparator
 
         // adicionando elementos com add
         fila.add("Anna"); // pode gerar exceção IllegalStateException para filas com restrição cheias

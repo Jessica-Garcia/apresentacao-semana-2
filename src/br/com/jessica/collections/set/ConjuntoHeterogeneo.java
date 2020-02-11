@@ -1,6 +1,7 @@
 package br.com.jessica.collections.set;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 @SuppressWarnings({"rawtypes", "unchecked"})
 public class ConjuntoHeterogeneo {
@@ -31,12 +32,14 @@ public class ConjuntoHeterogeneo {
         System.out.println(conjunto.contains('x'));
         System.out.println(conjunto.contains(1));
 
-        Set nums = new HashSet();
+        Set nums = new LinkedHashSet();
         nums.add(1);
         nums.add(2);
         nums.add(3);
+        nums.add(1);
 
         // mostrando os valores:
+        System.out.println("================================");
         System.out.println(nums);
         System.out.println(conjunto);
 
