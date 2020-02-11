@@ -21,7 +21,8 @@ public class MutableTeste {
         p1.setId("000000");
         p1.setPreco(1500.0);
 
-        // como apontam para o mesmo endereço, e não foi criado novo objeto os valores mudarão para as duas variáveis
+        // como apontam para o mesmo endereço, e não foi criado novo objeto
+        // os valores mudarão para as duas variáveis
         System.out.println(p1);
         System.out.println(p2);
 

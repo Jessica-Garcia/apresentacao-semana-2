@@ -13,7 +13,7 @@ public final class ImmutableClass {
     public ImmutableClass(Integer atributoImutavel1, String atributoImutavel2, Date atributoMutavel1) {
         this.atributoImutavel1 = atributoImutavel1;
         this.atributoImutavel2 = atributoImutavel2;
-        // Sempre criar uma nova instância atribuindo um valor para uma classe mutável
+        // Sempre criar uma nova instância atribuindo com cópia do atributo (deep copy, cópia defensiva)
         this.atributoMutavel1 = new Date(atributoMutavel1.getTime());
     }
 
@@ -29,8 +29,15 @@ public final class ImmutableClass {
     }
 
     public Date getAtributoMutavel1() {
-        return new Date(atributoMutavel1.getTime()); // sempre retornar uma nova instância para os mutáveis
+        return new Date(atributoMutavel1.getTime()); // retornar um novo objeto com cópia do atributo
         //return atributoMutavel1; não fazer isso para objetos mutáveis,
         // pois de alguma forma(???) isso poderá alterar o estado do objeto
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + atributoImutavel1 +
+                ", Nome: " + atributoImutavel2 +
+                ", Data de Nascimento: " + atributoMutavel1;
     }
 }

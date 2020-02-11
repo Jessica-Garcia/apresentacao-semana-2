@@ -1,19 +1,22 @@
 package br.com.jessica.collections.set;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class ConjuntoHomogeneo {
     public static void main(String[] args) {
         Set<String> lista = new HashSet<>();
-        //para deixar os elementos ordenado por ordem de inserção instanciar com:
-        //SortedSet<String> lista = new TreeSet<>();
+        //para deixar os elementos ordenado por ordem alfabética:
+        //Set<String> lista = new TreeSet<>();
         //TreeSet<String> lista = new TreeSet<>();
+        //para deixar os elementos ordenado por ordem de inserção:
         //Set<String> lista = new LinkedHashSet<>();
-        lista.add("Ana");
         lista.add("Carlos");
-        lista.add("Luca");
+        lista.add("Ana");
         lista.add("Pedro");
+        lista.add("Luca");
 
         System.out.println(lista);
         System.out.println("--------------------------------");
